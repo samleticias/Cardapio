@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Table(name = "foods")
 @Entity(name = "foods")
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -22,21 +23,5 @@ public class Food {
         this.image = data.image();
         this.price = data.price();
         this.title = data.title();
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public Integer getPrice() {
-        return price;
     }
 }
