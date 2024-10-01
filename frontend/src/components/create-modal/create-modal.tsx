@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useFoodDataMutate } from '../../hooks/useFoodDataMutate.ts';
 import { FoodData } from '../../interface/FoodData.ts';
-
 import "./modal.css";
 
 interface InputProps {
